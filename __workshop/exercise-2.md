@@ -41,12 +41,12 @@ easier to read. Like the gap between 2. and 1. in the example's solution.
 
 ## Question 1: Check if the sentence includes the word "Hello".
 
-1. console.log('Sentence DOES NOT contain the word "Hello"');
-2. console.log('Sentence DOES contain the word "Hello"');
-3. if (sentence.includes('Hello')) {
 4. let sentence = 'Hello world!';
-5. } else {
-6. }
+5. if (sentence.includes('Hello')) {
+6. console.log('Sentence DOES contain the word "Hello"');
+7. } else {
+8. console.log('Sentence DOES NOT contain the word "Hello"');
+9. }
 
 Put your solution between the ```:
 _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
@@ -58,11 +58,11 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
 ## Question 2: Get the specified item in the nested array
 
-1. const firstIndex = 0;
-2. const array = [[1, [2, 3]]];
-3. console.log(array[firstIndex][secondindex][thirdIndex])
-4. const secondIndex = 1;
-5. const thirdIndex = = 0;
+12. const array = [[1, [2, 3]]];
+1. const firstIndex = array[0][0];
+1. const secondIndex = array[0][1][0];
+1. const thirdIndex = array[0][1][1];
+1. console.log(array[firstIndex][secondindex][thirdIndex])
 
 ```
 // Your solution here!
@@ -71,12 +71,12 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
 ## Question 3: Log all numbers from 10 to 5
 
-1. while (currentNum > min) {
 2. let currentNum = 10;
-3. console.log(currentNum);
-4. let min = 5;
-5. currentNum = currentNum - 1;
-6. }
+3. let min = 5;
+4. while (currentNum >= min) {
+5. console.log(currentNum);
+6. currentNum-- ;
+7. }
 
 ```
 // Your solution here!
@@ -85,13 +85,13 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
 ## Question 4: Reverse the string to check for hidden messages
 
-1. const reversedArray = letterArray.reverse();
-2. console.log('Your message:', reversedString)
-3. const letterArray = encodedMessage.split('');
 4. const encodedMessage = 'gnidliub gruobuaF eht rednu deirub si erusaert ehT';
-5. if (reversedString.includes('treasure')) {
-6. }
+5. const letterArray = encodedMessage.split('');
+6. const reversedArray = letterArray.reverse();
 7. const reversedString = reversedArray.join('');
+8. if (reversedString.includes('treasure')) {
+9. console.log('Your message:', reversedString)
+10. }
 
 ```
 // Your solution here!
@@ -100,13 +100,13 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
 ## Question 5: Add all the numbers from 10 to 0
 
-1. total = total + count;
-2. while (count > 0) {
-3. let total = 0;
-4. count = count - 1;
-5. console.log('The total is:', total)
 6. let count = 10;
-7. }
+7. let total = 0;
+8. while (count > 0) {
+9. total = total + count;
+10. count = count - 1;
+11. console.log('The total is:', total)
+12. }
 
 ```
 // Your solution here!
@@ -115,15 +115,15 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
 ## Question 6: Check if the array includes a specific number
 
-1. }
-2. let includesNumber;
-3. console.log('Array includes the number!')
-4. for (let i = 0; i < array.length; i++) {
-5. let item = array[i];
-6. if (item === numberToSearchFor) {
 7. let numberToSearchFor = 5;
-8. let array = [1, 3, 7, 4, 5, 2, 1];
-9. }
+8. let includesNumber;
+9. let array = [1, 3, 7, 4, 5, 2, 1];
+10. for (let i = 0; i < array.length; i++) {
+11. let item = array[i];
+12. if (item === numberToSearchFor) {
+13. console.log('Array includes the number!')
+14. }
+15. }
 
 ```
 // Your solution here!
