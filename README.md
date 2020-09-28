@@ -203,3 +203,4 @@ Write a program that generates a list of all prime numbers between 1 and 200.
 Write a program which calculates the 50th number in the fibonacci sequence.
 
 - Open [exercise-13.js](workshop/exercise-13.js) file.
+[![Run on Repl.it](https://repl.it/badge/github/marcospoto/m2-1-js--fundamentals-P1)](https://repl.it/github/marcospoto/m2-1-js--fundamentals-P1)
